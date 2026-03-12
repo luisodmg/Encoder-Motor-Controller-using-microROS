@@ -11,9 +11,9 @@
 #include "esp_system.h"
 
 // ------------ WIFI ------------
-char ssid[] = "ElPanelas";
-char password[] = "luispapa1";
-char agent_ip[] = "192.168.1.112";
+char ssid[] = "XX";
+char password[] = "XX";
+char agent_ip[] = "IPdeUbuntu";
 uint16_t agent_port = 8888;
 
 // ------------ MOTOR PINS ------------
@@ -36,7 +36,7 @@ const int pwmRes = 8;
 const float PPR = 172.0;
 const float Ts = 0.01;
 
-const float OMEGA_MAX = 9.15;
+const float OMEGA_MAX = 46.5;
 
 // ------------ STATE ------------
 float omega = 0;
@@ -54,8 +54,8 @@ float integral = 0;
 float max_integral = 50;
 
 // ------------ MOTOR MODEL (feedforward) ------------
-float ff_gain = 5.5;
-float ff_offset = 60;
+float ff_gain = 2.2;
+float ff_offset = 40;
 
 // ------------ LIMITS ------------
 int pwm_dead = 70;
